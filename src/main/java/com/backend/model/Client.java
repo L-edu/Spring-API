@@ -18,16 +18,25 @@ public class Client {
 
 	private String email;
 	
+	private String cpf;
+	
+	private Double renda;
+	
+	
+
+
 	public Client() {
 		
 	}	
 	
 
-	public Client(long id, String name, String email) {
+	public Client(long id, String name, String email, String cpf, Double renda) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
+		this.cpf = cpf;
+		this.renda = renda;
 	}
 
 
@@ -54,6 +63,25 @@ public class Client {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	public String getCpf() {
+		return cpf;
+	}
+
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+
+	public Double getRenda() {
+		return renda;
+	}
+
+
+	public void setRenda(Double renda) {
+		this.renda = renda;
 	}
 	
 	
